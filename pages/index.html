@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../src/styles/style.css">
+		<link rel="shortcut icon" type="image/ico" href="../src/styles/favicon.ico"/>
+	</head>
+	
+	<div class="main">
+
+		<div class="header">
+			<a href="#about-view">ПРО НАС</a>
+			<a href="#team-view">КОМАНДА</a>
+			<a href="#shop-view">МАГАЗИН</a>
+			<a href="#contact-view">КОНТАКТИ</a>
+		</div>
+
+		<div class="about-us" id="about-view">
+			<img id="wallpaper-about-us"></img>
+			<h2>HARRY'S POTTERY WORKSHOP</h2>
+			<p>&nbsp; &nbsp; &nbsp;Привіт, це сторінка гончарної майстерні. Сподіваємось, Ви зможете знайти щось для себе і близьких. Це місце де Ти зможеш побувати у чарівній атмосфері з приємними людьми і до того ж навчитись чомусь новому.<br>
+			<br>&nbsp; &nbsp; &nbsp;Ваша "Гончарна майстерня Гаррі"</p>
+		</div>
+
+		<div class="pottery">
+			<div class="pottery-list">
+				<img id="wallpaper-pottery-1"></img>
+				<h2>МАЙСТЕР КЛАСИ</h2>
+				<ul>
+					<li>ІНДИВІДУАЛЬНІ НАВЧАННЯ</li>
+					<li>ГРУПОВІ НАВЧАННЯ</li>
+					<li>У ЗРУЧНИЙ ДЛЯ ВАС ЧАС</li>
+				</ul>
+			</div>
+			<div class="pottery-list">
+				<img id="wallpaper-pottery-2"></img>
+				<h2>ЗАТИШНА КРАМНИЦЯ</h2>
+				<ul>
+					<li>ПОДАРУНКИ ДЛЯ ВАС І БЛИЗЬКИХ</li>
+					<li>ШУКАЙТЕ НОВІ ЗНАЙОМСТВА</li>
+					<li>ВІДКРИВАЙТЕ ДЛЯ СЕБЕ ЩОСЬ НОВЕ</li>
+				</ul>
+			</div>
+			<div class="pottery-list">
+				<img id="wallpaper-pottery-3"></img>
+				<h2>НОТКИ МАГІЇ</h2>
+				<ul>
+					<li>МАГІЧНЕ АТМОСФЕРА</li>
+					<li>МАГІЧНА МУЗИКА</li>
+					<li>МАГІЧНІ ВИРОБИ</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="team" id="team-view">
+			<h2>БІЛЬШЕ ПРО НАС<h2>
+			  <div class="teammate1">
+			   <div id="teammate-1"><button id="teammate-1-button" onclick="teammate1info()"></button></div>
+			   <div id="teammate-1-info">
+			   	<ul>
+			   		<li>МАР'ЯНА</li>
+			   		<li>працює у сфері більше 5 років</li>
+			   		<li>фанатка Гаррі Поттера</li>
+			   		<li>гарнюня</li>
+
+			   	</ul>
+			   </div>
+			  </div>
+			  
+			  <div class="teammate2">
+			  	<div id="teammate-2-info">
+				  	<ul>
+				   		<li>ВЛАДИСЛАВ</li>
+				   		<li>не гарнюня</li>
+				   	</ul>
+			  	</div>
+			   <div id="teammate-2"><button id="teammate-2-button" onclick="teammate2info()"></button></div>
+			</div>
+		</div>
+
+		<div class="shop" id="shop-view">
+			<div class="menu">
+				<button class="menu-button" id="menu-button-1" onclick="menuButton1()">МАЙСТЕР КЛАСИ</button>
+				<button class="menu-button" id="menu-button-2" onclick="menuButton2()">КЕРАМІЧНІ ВИРОБИ</button>
+			</div>
+			<div class="menu-list">
+				<div class="training">
+					<div class="training-block" id="training-block-1">
+						<h2>КЕРАМІКА</h2>
+						<input class="input-field" placeholder="Прізвище та Ім'я" minlength="4" maxlength="30" onkeypress="noDigits(event)">
+						<input class="input-field" placeholder="Моб. номер (111-11-111)" type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+						<input class="input-field" placeholder="Кількість осіб (від 1 до 5)" type="number" min="1" max="5">
+						<input class="input-field" placeholder="Дата та час візиту" type="date">
+						<input class="input-field" placeholder="Особисті побажання">
+						<button class="button-event" onclick="buttonEvent1()">ЗАПИСАТИСЬ</button>
+					</div>
+					<div class="training-block" id="training-block-2">
+						<h2>ГЛИНА</h2>
+						<input class="input-field" placeholder="Прізвище та Ім'я" minlength="4" maxlength="30" onkeypress="noDigits(event)">
+						<input class="input-field" placeholder="Моб. номер (111-11-111)" type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+						<input class="input-field" placeholder="Кількість осіб (від 1 до 5)" type="number" min="1" max="5">
+						<input class="input-field" placeholder="Дата та час візиту" type="date">
+						<input class="input-field" placeholder="Особисті побажання">
+						<button class="button-event" onclick="buttonEvent2()">ЗАПИСАТИСЬ</button>
+					</div>
+					<div class="training-block" id="training-block-3">
+						<h2>ДЕКОРУВАННЯ</h2>
+						<input class="input-field" placeholder="Прізвище та Ім'я" minlength="4" maxlength="30" onkeypress="noDigits(event)">
+						<input class="input-field" placeholder="Моб. номер (111-11-111)" type="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+						<input class="input-field" placeholder="Кількість осіб (від 1 до 5)" type="number" min="1" max="5">
+						<input class="input-field" placeholder="Дата та час візиту" type="date">
+						<input class="input-field" placeholder="Особисті побажання">
+						<button class="button-event" onclick="buttonEvent3()">ЗАПИСАТИСЬ</button>
+					</div>
+				</div>
+
+				<div class="item-list">
+					<div class="item-list-line" id="item-list-line-1">
+						<button id="item1" class="item" onclick="zakaz(this)"></button>
+						<button id="item2" class="item" onclick="zakaz(this)"></button>
+						<button id="item3" class="item" onclick="zakaz(this)"></button>
+					</div>
+					<div class="item-list-line" id="item-list-line-2">
+						<button id="item4" class="item" onclick="zakaz(this)"></button>
+						<button id="item5" class="item" onclick="zakaz(this)"></button>
+						<button id="item6" class="item" onclick="zakaz(this)"></button>
+					</div>
+					<div class="zakaz">
+						<input placeholder="ПІБ" id="nameZakaz" minlength="4" maxlength="30" onkeypress="noDigits(event)"></input>
+						<input placeholder="Моб. телефон" id="phoneZakaz"></input>
+						<input id="itemNumberId" readonly></input>
+						<button onclick="done()">ЗАМОВИТИ</button>
+						<button onclick="canceled()">ВІДМОВИТИСЯ</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="contact" id="contact-view">
+			<div>
+				<p>ТЕЛЕФОН</p><br>
+				<p>095-123-45-67</p>
+				<p>097-890-12-34</p>
+				<p>096-567-89-01</p>
+			</div>
+			<div>
+				<p>ПОШТА</p><br>
+				<p>harrys.pottery@gmail.com</p>
+				<p>mariana.pottery@gmail.com</p>
+				<p>vladyslav.pottery@ukr.net</p>
+			</div>
+			<div>
+				<p>HARRY'S POTTERY WORKSHOP</p>
+				<p>всі права захищені. 2021</p><br>
+				<p>з приводу індивідуальних замовлень</p>
+				<p>звертатись за телефоном або е.поштою</p>
+			</div>
+		</div>
+
+
+	</div>
+
+	<body>
+		<script src="../src/scripts/script.js"></script>
+	</body>
+</html>
